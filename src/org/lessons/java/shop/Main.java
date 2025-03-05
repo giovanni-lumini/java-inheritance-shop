@@ -42,7 +42,7 @@ public class Main {
                 // non ci sono in Smartphone.java
                 System.out.println(galaxySmartphone.getNome());
                 System.out.println(galaxySmartphone.getCodice());
-                System.out.println(galaxySmartphone.getNomeEsteso());
+                System.out.println(galaxySmartphone.getNomeEstesoPlusImei());
                 System.out.println(galaxySmartphone.getCodiceImei());
                 System.out.println(galaxySmartphone.getMemoria());
 

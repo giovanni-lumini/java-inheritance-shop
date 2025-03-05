@@ -30,4 +30,10 @@ public class Smartphone extends Prodotto {
     public void setMemoria(int memoria) {
         this.memoria = memoria;
     }
+
+    // metodo ereditato da getNomeEsteso (Prodotto.java)
+    // in più abbiamo aggiunto l'imei
+    public String getNomeEstesoPlusImei() {
+        return super.getNomeEsteso() + "-" + codiceImei;
+    }
 }
