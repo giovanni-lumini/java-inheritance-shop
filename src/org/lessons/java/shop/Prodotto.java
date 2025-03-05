@@ -9,7 +9,9 @@ import java.math.RoundingMode;
 
 public class Prodotto {
     // ISTANZE
-    private int codice;
+    // int codice messo protected se no con private non si poteva far ereditare
+    protected int codice;
+    // queste sono private ma passano del costruttor che è public
     private String nome;
     private String marca;
     // BigDecimal va bene per le valute

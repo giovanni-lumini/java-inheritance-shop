@@ -34,5 +34,25 @@ public class Main {
         macbook.setMarca("Samsung");
         System.out.println(macbook.getMarca());
 
+        // SMARTPHONE
+        Smartphone galaxySmartphone = new Smartphone("Galaxy S25", "Samsung", BigDecimal.valueOf(850),
+                BigDecimal.valueOf(0.22), 128);
+
+        // i primi 3 println sono stati ereditati da Prodotto.java,
+        // non ci sono in Smartphone.java
+        System.out.println(galaxySmartphone.getNome());
+        System.out.println(galaxySmartphone.getCodice());
+        System.out.println(galaxySmartphone.getNomeEsteso());
+        System.out.println(galaxySmartphone.getCodiceImei());
+        System.out.println(galaxySmartphone.getMemoria());
+
+        // TELEVISORI
+        Televisori sonySmart = new Televisori("Sony Bravia", "Sony", BigDecimal.valueOf(1000),
+                BigDecimal.valueOf(0.22), "60 pollici", true);
+
+        System.out.println(sonySmart.getCodice());
+        System.out.println(sonySmart.getNomeEsteso());
+        System.out.println(sonySmart.getDimensione());
+
     }
 }
