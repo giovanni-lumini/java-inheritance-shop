@@ -1,4 +1,4 @@
-package org.lessons.java.shop;
+package org.lessons.java.shop.Snack;
 
 //decimali per valute e arrotondamenti (per operazioni si usano metodi e non /, *, +, -)
 import java.math.BigDecimal;

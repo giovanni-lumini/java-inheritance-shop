@@ -7,9 +7,20 @@ public class Cuffie extends Prodotto {
     String colore;
     boolean wireless;
 
-    // costruttore
+    // costruttore 1
     public Cuffie(String nome, String marca, BigDecimal prezzo, BigDecimal iva, String colore, boolean wireless) {
+        // super() variabili ereditate
         super(nome, marca, prezzo, iva);
+
+        this.colore = colore;
+        this.wireless = wireless;
+    }
+
+    // costruttore 2
+    public Cuffie(String nome, String marca, BigDecimal prezzo, String colore, boolean wireless) {
+        // super() variabili ereditate
+        super(nome, marca, prezzo);
+
         this.colore = colore;
         this.wireless = wireless;
     }
@@ -31,4 +42,9 @@ public class Cuffie extends Prodotto {
         this.wireless = wireless;
     }
 
+    @Override
+    // override del metodo toString(), in Prodotto.java
+    public String toString() {
+        return super.toString() + "colore: " + getColore() + "wirelss: " + getWireless();
+    }
 }

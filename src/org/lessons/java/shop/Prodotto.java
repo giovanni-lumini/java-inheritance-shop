@@ -32,9 +32,14 @@ public class Prodotto {
     }
 
     // costruttore 2
-    public Prodotto(String nome, String marca) {
+    public Prodotto(String nome, String marca, BigDecimal prezzo) {
+        // metodo per codice random
+        Random random = new Random();
+        this.codice = random.nextInt(99999);
+
         this.nome = nome;
         this.marca = marca;
+        this.prezzo = prezzo;
     }
 
     // GETTER E SETTER
@@ -95,6 +100,18 @@ public class Prodotto {
 
     // metodo per nome esteso concatenando codice e nome
     public String getNomeEsteso() {
+        if (nome != null) {
+            return codice + "-" + nome;
+        }
+        return null;
+    }
+
+    // il nomeEsteso si può fare con getNomeEsteso o
+    // con il toString
+
+    @Override
+    // basta stampare l'oggeto per far funzionare il metodo
+    public String toString() {
         if (nome != null) {
             return codice + "-" + nome;
         }

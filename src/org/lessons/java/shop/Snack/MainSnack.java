@@ -1,4 +1,4 @@
-package org.lessons.java.shop;
+package org.lessons.java.shop.Snack;
 
 import java.math.BigDecimal;
 //importo lo scanner per leggere gli input dalla console

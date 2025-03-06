@@ -1,4 +1,4 @@
-package org.lessons.java.shop;
+package org.lessons.java.shop.Snack;
 
 public class RegistroStudenti {
     // istanza
